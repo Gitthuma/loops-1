@@ -33,12 +33,20 @@
 
         // Add your code here
 
-        /*Create li element and assign it to a variable*/
-        let listItem = document.createElement('li');
+        /*Creat a simple loop that goes through all the items in the provided myArray and prints them out on the screen inside list items*/
 
-        /*Assign the content of the array to li using listitem*/
+        for (i = 0; i< myArray.length; i++) {
 
-        listItem.textContent = myArray[i];
+            /*Create li element and assign it to a variable*/
+            let listItem = document.createElement('li');
+
+            /*Assign the content of the array to li using listitem*/
+            listItem.textContent = myArray[i];
+
+            /*Append listItem inside ul also list*/
+            list.appendChild(listItem);
+
+        }
 
         // Don't edit the code below here!
 
